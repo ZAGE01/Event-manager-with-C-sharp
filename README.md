@@ -2,9 +2,13 @@
 
 ## Kääntäminen ja ajo
 Ohjelma voidaan kääntää Windowsilla esimerkiksi Powershellin kautta.
+
 Pura zip paketin sisältö haluamaasi paikkaan ja siirry kyseiseen hakemistoon Powershellillä.
+
 Tämän jälkeen ohjelmaa voi kääntää ja ajaa ”dotnet run” -komennolla. Voit esimerkiksi kirjoittaa ”dotnet run help” näkeäksesi kaikki mahdolliset parametrit ja lisäoptiot.
+
 Ohjelman kansiossa sijaitsee ”events.csv” -tiedosto, jota käytetään ohjelman ajamiseen. Tiedostosta voidaan näyttää ja poistaa tapahtumia sekä sinne voidaan lisätä uusia tapahtumia.
+
 Ohjelma toimii kutakuinkin samalla tavalla kuin harjoitustyön ohjeiden esimerkit. Ohjelmaa ei kuitenkaan ajeta ”days” komennolla vaan tavallisella ”dotnet run”:lla tyyliin: ”dotnet run list --before-date 2024-1-1 --after-date 2023-1-1”.
 Toinen ero harjoitustyön ohjeiden esimerkkeihin on ”--exclude”. Sen sijaan, että --exclude laitettaisiin listattujen kategorioiden perään, sitä käytetään omana yksittäisenä optionaan tyyliin: ”dotnet run list --exclude microsoft,holidays”. Tämä näyttää kaikki muut kategoriat paitsi ”microsoft” ja ”holidays”.
 
