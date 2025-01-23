@@ -57,5 +57,5 @@ Tapahtumia lisätessä suurin ongelma oli tiedostoon lisättyjen tapahtumien muo
 
 Tapahtumien poistamisen kanssa minulla oli eniten ongelmia. ’--all’ toiminto ei aluksi suostunut toimimaan kuin piti ja kaikki tapahtumat poistettiin aina joka tapauksessa. Myös dry-runin toteuttamisessa esiintyi paljon virheitä, se ei esimerkiksi näyttänyt oikeaa määrää poistettavia tapahtumia eikä muutenkaan toiminut kuten halusin. Lopulta onnistuin korjaamaan virheet suunnittelemalla poistofunktion toimintaa hieman tarkemmin ja miettimällä funktiossa käytettävää logiikkaa.
 
-# Omaa pohdintaa projektistani
+## Omaa pohdintaa projektistani
 Mielestäni ohjelma toimii hyvin ja suurin piirtein niin kuin pitäisi. ’Program’ -luokka on kuitenkin hieman sekava ja paikoittain turhan pitkä sekä monimutkainen. Minun olisi pitänyt luoda enemmän luokkia ja mahdollisesti jonkinlainen EventManager -luokka, johon osan toiminnallisuuksista olisi voinut sisällyttää. Olisin voinut myös suunnitella toteutusta hieman paremmin.
