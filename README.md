@@ -26,7 +26,7 @@ Käytin ohjelmassa C# kielen standardikirjastojen lisäksi System.IO -kirjastoa 
 Ohjelma sisältää kaksi pääluokkaa ’Program’ ja ’Event’. Tämän lisäksi samassa
 kansiossa on myös ’events.csv’ -tiedosto, jossa tapahtumat sijaitsevat.
 
-1 ’Program’ -luokka toimii ohjelman käyttöliittymänä ja sisältää toiminnot sisältävän switchin. Luokka sisältää myös kaikki funktiot ja ohjelman ajossa tarvittavat toiminnallisuudet.
+### 1. ’Program’ -luokka toimii ohjelman käyttöliittymänä ja sisältää toiminnot sisältävän switchin. Luokka sisältää myös kaikki funktiot ja ohjelman ajossa tarvittavat toiminnallisuudet.
 
 Luokasta löytyy funktiot:
 
@@ -48,7 +48,7 @@ Luokasta löytyy funktiot:
 
 • ReadEvents(), tapahtumien luku tiedostosta, käytetään listaukseen ja poistamiseen.
 
-2 ’Event’ -luokka kuvaa yksittäistä tapahtumaa ja sisältää sen ominaisuudet sekä vertailuun ja muotoiluun liittyviä toimintoja.
+### 2 ’Event’ -luokka kuvaa yksittäistä tapahtumaa ja sisältää sen ominaisuudet sekä vertailuun ja muotoiluun liittyviä toimintoja.
 
 ## Ongelmat
 Minulla oli aluksi hieman vaikeuksia C# kielen käytössä, koska tämä oli ensimmäinen isompi tehtävä, jonka tein kyseisellä kielellä. Vastaan tuli paljon ongelmia päivämäärien sekä DateOnlyn ja DateTimen käytössä, koska yritin aluksi käyttää DateTimeä ja lopulta päädyin käyttämään DateOnlyä. Tämän jälkeen koodissani oli useita kohtia, joita piti muuttaa DateOnlyä varten. 
