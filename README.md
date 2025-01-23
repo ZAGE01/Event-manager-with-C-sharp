@@ -14,7 +14,12 @@ Ohjelma toimii kutakuinkin samalla tavalla kuin harjoitustyön ohjeiden esimerki
 Toinen ero harjoitustyön ohjeiden esimerkkeihin on ”--exclude”. Sen sijaan, että --exclude laitettaisiin listattujen kategorioiden perään, sitä käytetään omana yksittäisenä optionaan tyyliin: ”dotnet run list --exclude microsoft,holidays”. Tämä näyttää kaikki muut kategoriat paitsi ”microsoft” ja ”holidays”.
 
 ## Käytetyt työkalut ja kirjastot
-Tein harjoitustyön .NET versiolla 8.0.200 ja C# kielellä. Käytin Windowsia ja kehitysympäristönä toimi Visual Studio Code. Käytin Powershelliä ohjelman ajamiseen ja testaukseen.
+Tein harjoitustyön .NET versiolla 8.0.200 ja C# kielellä.
+
+Käytin Windowsia ja kehitysympäristönä toimi Visual Studio Code.
+
+Käytin Powershelliä ohjelman ajamiseen ja testaukseen.
+
 Käytin ohjelmassa C# kielen standardikirjastojen lisäksi System.IO -kirjastoa tiedostojen käsittelyyn sekä System.Linq -kirjastoa LINQ ominaisuuden hyödyntämiseen.
 
 ## Ohjelman rakenne
@@ -37,12 +42,11 @@ Luokasta löytyy funktiot:
 2 ’Event’ -luokka kuvaa yksittäistä tapahtumaa ja sisältää sen ominaisuudet sekä vertailuun ja muotoiluun liittyviä toimintoja.
 
 ## Ongelmat
-Minulla oli aluksi hieman vaikeuksia C# kielen käytössä, koska tämä oli ensimmäinen isompi tehtävä, jonka tein kyseisellä kielellä. Minulla tuli vastaan paljon ongelmia päivämäärien sekä DateOnlyn ja DateTimen käytössä, koska yritin aluksi käyttää DateTimeä ja lopulta päädyin käyttämään DateOnlyä. Tämän jälkeen koodissani oli useita kohtia, joita piti muuttaa DateOnlyä varten. 
+Minulla oli aluksi hieman vaikeuksia C# kielen käytössä, koska tämä oli ensimmäinen isompi tehtävä, jonka tein kyseisellä kielellä. Vastaan tuli paljon ongelmia päivämäärien sekä DateOnlyn ja DateTimen käytössä, koska yritin aluksi käyttää DateTimeä ja lopulta päädyin käyttämään DateOnlyä. Tämän jälkeen koodissani oli useita kohtia, joita piti muuttaa DateOnlyä varten. 
 
 Tapahtumia lisätessä suurin ongelma oli tiedostoon lisättyjen tapahtumien muotoilu. Koodissani oli pari pientä virhettä, joiden vuoksi lisättyjen tapahtumien kategoriat ja kuvaukset kirjoitettiin tiedostoon väärässä järjestyksessä ja tämän takia tapahtumien listaaminen kategorioiden perusteella ei toiminut kuin pitäisi.
 
 Tapahtumien poistamisen kanssa minulla oli eniten ongelmia. ’--all’ toiminto ei aluksi suostunut toimimaan kuin piti ja kaikki tapahtumat poistettiin aina joka tapauksessa. Myös dry-runin toteuttamisessa esiintyi paljon virheitä, se ei esimerkiksi näyttänyt oikeaa määrää poistettavia tapahtumia eikä muutenkaan toiminut kuten halusin. Lopulta onnistuin korjaamaan virheet suunnittelemalla poistofunktion toimintaa hieman tarkemmin ja miettimällä funktiossa käytettävää logiikkaa.
 
 # Omaa pohdintaa projektistani
-Mielestäni ohjelma toimii hyvin ja suurin piirtein niin kuin pitäisi. ’Program’ -luokka
-on kuitenkin hieman sekava ja paikoittain turhan pitkä sekä monimutkainen. Minun olisi pitänyt luoda enemmän luokkia ja mahdollisesti jonkinlainen EventManager -luokka, johon osan toiminnallisuuksista olisi voinut sisällyttää. Olisin voinut myös suunnitella toteutusta hieman paremmin.
+Mielestäni ohjelma toimii hyvin ja suurin piirtein niin kuin pitäisi. ’Program’ -luokka on kuitenkin hieman sekava ja paikoittain turhan pitkä sekä monimutkainen. Minun olisi pitänyt luoda enemmän luokkia ja mahdollisesti jonkinlainen EventManager -luokka, johon osan toiminnallisuuksista olisi voinut sisällyttää. Olisin voinut myös suunnitella toteutusta hieman paremmin.
