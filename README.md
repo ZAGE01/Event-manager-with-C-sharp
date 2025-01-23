@@ -1,6 +1,6 @@
-## Harjoitustyö ##
+# Harjoitustyö
 
-# Kääntäminen ja ajo
+## Kääntäminen ja ajo
 Ohjelma voidaan kääntää Windowsilla esimerkiksi Powershellin kautta.
 Pura zip paketin sisältö haluamaasi paikkaan ja siirry kyseiseen hakemistoon Powershellillä.
 Tämän jälkeen ohjelmaa voi kääntää ja ajaa ”dotnet run” -komennolla. Voit esimerkiksi kirjoittaa ”dotnet run help” näkeäksesi kaikki mahdolliset parametrit ja lisäoptiot.
@@ -8,11 +8,11 @@ Ohjelman kansiossa sijaitsee ”events.csv” -tiedosto, jota käytetään ohjel
 Ohjelma toimii kutakuinkin samalla tavalla kuin harjoitustyön ohjeiden esimerkit. Ohjelmaa ei kuitenkaan ajeta ”days” komennolla vaan tavallisella ”dotnet run”:lla tyyliin: ”dotnet run list --before-date 2024-1-1 --after-date 2023-1-1”.
 Toinen ero harjoitustyön ohjeiden esimerkkeihin on ”--exclude”. Sen sijaan, että --exclude laitettaisiin listattujen kategorioiden perään, sitä käytetään omana yksittäisenä optionaan tyyliin: ”dotnet run list --exclude microsoft,holidays”. Tämä näyttää kaikki muut kategoriat paitsi ”microsoft” ja ”holidays”.
 
-# Käytetyt työkalut ja kirjastot
+## Käytetyt työkalut ja kirjastot
 Tein harjoitustyön .NET versiolla 8.0.200 ja C# kielellä. Käytin Windowsia ja kehitysympäristönä toimi Visual Studio Code. Käytin Powershelliä ohjelman ajamiseen ja testaukseen.
 Käytin ohjelmassa C# kielen standardikirjastojen lisäksi System.IO -kirjastoa tiedostojen käsittelyyn sekä System.Linq -kirjastoa LINQ ominaisuuden hyödyntämiseen.
 
-# Ohjelman rakenne
+## Ohjelman rakenne
 Ohjelma sisältää kaksi pääluokkaa ’Program’ ja ’Event’. Tämän lisäksi samassa
 kansiossa on myös ’events.csv’ -tiedosto, jossa tapahtumat sijaitsevat.
 
@@ -31,7 +31,7 @@ Luokasta löytyy funktiot:
 
 2 ’Event’ -luokka kuvaa yksittäistä tapahtumaa ja sisältää sen ominaisuudet sekä vertailuun ja muotoiluun liittyviä toimintoja.
 
-# Ongelmat
+## Ongelmat
 Minulla oli aluksi hieman vaikeuksia C# kielen käytössä, koska tämä oli ensimmäinen isompi tehtävä, jonka tein kyseisellä kielellä. Minulla tuli vastaan paljon ongelmia päivämäärien sekä DateOnlyn ja DateTimen käytössä, koska yritin aluksi käyttää DateTimeä ja lopulta päädyin käyttämään DateOnlyä. Tämän jälkeen koodissani oli useita kohtia, joita piti muuttaa DateOnlyä varten. 
 
 Tapahtumia lisätessä suurin ongelma oli tiedostoon lisättyjen tapahtumien muotoilu. Koodissani oli pari pientä virhettä, joiden vuoksi lisättyjen tapahtumien kategoriat ja kuvaukset kirjoitettiin tiedostoon väärässä järjestyksessä ja tämän takia tapahtumien listaaminen kategorioiden perusteella ei toiminut kuin pitäisi.
