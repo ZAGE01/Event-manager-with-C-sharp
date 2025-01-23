@@ -29,6 +29,7 @@ kansiossa on myös ’events.csv’ -tiedosto, jossa tapahtumat sijaitsevat.
 1 ’Program’ -luokka toimii ohjelman käyttöliittymänä ja sisältää toiminnot sisältävän switchin. Luokka sisältää myös kaikki funktiot ja ohjelman ajossa tarvittavat toiminnallisuudet.
 
 Luokasta löytyy funktiot:
+
 • EventsHelp(), tulostaa käyttäjälle mahdolliset toiminnot ja lisäoptiot
 
 • ListEvents(), tapahtumien listaus
