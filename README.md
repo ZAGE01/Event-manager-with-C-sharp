@@ -1,7 +1,9 @@
 # Harjoitustyö
 
 ## Kääntäminen ja ajo
-Ohjelma voidaan kääntää Windowsilla esimerkiksi Powershellin kautta. Tarvitset .NETin ohjelman ajamiseen
+Ohjelma voidaan kääntää Windowsilla esimerkiksi Powershellin kautta. 
+
+#### Tarvitset .NETin ohjelman ajamiseen.
 
 Pura zip paketin sisältö haluamaasi paikkaan ja siirry kyseiseen hakemistoon Powershellillä.
 
