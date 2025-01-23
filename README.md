@@ -30,13 +30,21 @@ kansiossa on myös ’events.csv’ -tiedosto, jossa tapahtumat sijaitsevat.
 
 Luokasta löytyy funktiot:
 • EventsHelp(), tulostaa käyttäjälle mahdolliset toiminnot ja lisäoptiot
+
 • ListEvents(), tapahtumien listaus
+
 • FilterEvents(), tapahtumien lajittelu
+
 • AddEvent(), tapahtumien lisäys
+
 • SaveEvent(), lisättyjen tapahtumien tallennus tiedostoon
+
 • DeleteEvents(), tapahtumien poistaminen
+
 • SaveEvents(), poistettujen tapahtumien päivitys tiedostoon
+
 • ShouldDelete(), tarkistetaan, mitkä tapahtumat kuuluu poistaa
+
 • ReadEvents(), tapahtumien luku tiedostosta, käytetään listaukseen ja poistamiseen.
 
 2 ’Event’ -luokka kuvaa yksittäistä tapahtumaa ja sisältää sen ominaisuudet sekä vertailuun ja muotoiluun liittyviä toimintoja.
